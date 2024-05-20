@@ -1,3 +1,80 @@
-body{
-    background-image: url('/src/imagenes/coffe01.jpeg');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: 'Pacifico', cursive;
+    color: #083D77;
+}
+
+h2{
+    color: brown;
+    font-size: xx-large;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+#main-logo{
+    width: 250px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.menu-section {
+    flex: 1;
+    padding: 20px;
+}
+.menu-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.menu-section ul {
+    list-style: none;
+    padding: 0;
+}
+.menu-section li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+.menu-section li:last-child {
+    border-bottom: none;
+}
+.images-section {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+}
+.images-section img {
+    margin: 10px;
+    border-radius: 8px;
+    width: calc(50% - 20px);
+    height: auto;
+}
+
+.header{
+    background-color: #310D20;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .images-section img {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
